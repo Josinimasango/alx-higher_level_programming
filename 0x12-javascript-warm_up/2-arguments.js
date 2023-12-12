@@ -2,12 +2,9 @@
 
 // check the number of arguments
 if (process.argv.length === 2){
-     //No arguments
-     console.log('No argument');
-} else if (process.argv.length === 3){
-     //Argument found	
-console.log('Argument found');
-} else {
-    // more than 1 argument found	
-console.log('Arguments found');
+  console.log('No argument');
+} else if (process.argv.length === 3){	
+  console.log('Argument found');
+} else {	
+  console.log('Arguments found');
 }
