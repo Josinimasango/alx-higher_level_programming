@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 // check the number of arguments
-let argv = arguments.length;
+let argv = process.argv.length;
 
 if (process.argv.length === 2){
      //No arguments
