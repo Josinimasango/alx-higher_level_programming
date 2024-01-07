@@ -4,13 +4,9 @@
  displays the value of the X-Request-Id
 '''
 
+from urllib import request
+from sys import argv
 
 if __name__ == "__main__":
-
-    import sys
-    import urllib.request
-
-    url = sys.argv[1]
-    with urllib.request.urlopen(url) as response:
-        X_Request_Id = response.getheader('X-Request-Id')
-        print(X_Request_Id)
+    with request.urlopen(argv[1]) as page:
+        print(page.getheader("X-Request-Id"))
